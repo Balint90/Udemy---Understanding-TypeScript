@@ -1,6 +1,6 @@
 import fs from "node:fs";
 
-fs.readFileSync();
+// fs.readFileSync();
 
 let userName: string;
 

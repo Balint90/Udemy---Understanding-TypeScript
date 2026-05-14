@@ -1,5 +1,5 @@
 import fs from "node:fs";
-fs.readFileSync();
+// fs.readFileSync();
 let userName;
 userName = "Balint";
 console.log(userName);
