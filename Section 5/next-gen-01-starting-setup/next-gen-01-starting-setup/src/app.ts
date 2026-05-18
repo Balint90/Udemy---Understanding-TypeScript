@@ -29,7 +29,7 @@ age = 29;
 //ARROW Functions
 //short version
 //with default args the order counts!
-const add = (a: number, b: number = 1) => a + b;
+// const add = (a: number, b: number = 1) => a + b;
 //long version
 const addLong = (a: number, b: number) => {
   return a + b;
@@ -66,3 +66,13 @@ const person = {
 
 //perfect copy of the person object
 const copiedPerson = { ...person };
+
+const add = (...numbers: number[]) => {
+  let result = 0;
+  numbers.reduce((currResult, curValue) => {
+    return curResult + curValue;
+  }, 0);
+};
+
+const addedNumbers = add(5, 10, 2, 3.7);
+console.log(addedNumbers);
