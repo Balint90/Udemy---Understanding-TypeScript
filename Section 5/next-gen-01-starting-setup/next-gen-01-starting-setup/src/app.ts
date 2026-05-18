@@ -47,3 +47,22 @@ if (button) {
 }
 
 printOutput(add(5));
+
+const hobbies = ["Sports", "Cooking"];
+// console.log(hobbies[0]);
+//nice feature if we wanna extract all values in an array
+const activeHobbies = ["Hiking"];
+
+//activeHobbies.push(hobbies[0]); //<- old method
+activeHobbies.push(...hobbies);
+
+const person = {
+  name: "Max",
+  age: 30,
+};
+
+//the pointer will be given here to the copiedPerson variable
+// const copiedPerson = person;
+
+//perfect copy of the person object
+const copiedPerson = { ...person };
