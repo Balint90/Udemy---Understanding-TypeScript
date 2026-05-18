@@ -1,9 +1,9 @@
 // Code goes here!
-const userName = "Balint";
+// const userName = "Balint";
 
-let age = 30;
+// let age = 30;
 
-age = 29;
+// age = 29;
 
 //var has global and function scope
 
@@ -57,7 +57,7 @@ const activeHobbies = ["Hiking"];
 activeHobbies.push(...hobbies);
 
 const person = {
-  name: "Max",
+  firstName: "Max",
   age: 30,
 };
 
@@ -76,3 +76,16 @@ const add = (...numbers: number[]) => {
 
 const addedNumbers = add(5, 10, 2, 3.7);
 console.log(addedNumbers);
+
+//array destructuring
+// takes the first two and assigns them to hobby1 and hobby2
+// const [hobby1, hobby2] = hobbies;
+
+// takes the first two and assigns them to hobby1 and hobby2 and the rest to the remainingHobbies array
+const [hobby1, hobby2, ...remainingHobbies] = hobbies;
+
+//object destructuring
+const { firstName, age } = person;
+
+//alias for the variables
+const { firstName: userName, age: userAge } = person;
