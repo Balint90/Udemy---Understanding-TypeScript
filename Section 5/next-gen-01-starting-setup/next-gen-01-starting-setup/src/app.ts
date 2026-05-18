@@ -46,7 +46,7 @@ if (button) {
   button.addEventListener("click", (event) => console.log(event));
 }
 
-printOutput(add(5));
+// printOutput(add(5));
 
 const hobbies = ["Sports", "Cooking"];
 // console.log(hobbies[0]);
@@ -70,7 +70,7 @@ const copiedPerson = { ...person };
 const add = (...numbers: number[]) => {
   let result = 0;
   numbers.reduce((currResult, curValue) => {
-    return curResult + curValue;
+    return currResult + curValue;
   }, 0);
 };
 
