@@ -28,7 +28,8 @@ age = 29;
 
 //ARROW Functions
 //short version
-const add = (a: number, b: number) => a + b;
+//with default args the order counts!
+const add = (a: number, b: number = 1) => a + b;
 //long version
 const addLong = (a: number, b: number) => {
   return a + b;
@@ -45,4 +46,4 @@ if (button) {
   button.addEventListener("click", (event) => console.log(event));
 }
 
-printOutput(add(5, 2));
+printOutput(add(5));
