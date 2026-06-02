@@ -1,0 +1,3 @@
+Classes and Interfaces
+Classes are JS feature... but classes enhanced by TypeScript
+interfaces are only Typescript features
